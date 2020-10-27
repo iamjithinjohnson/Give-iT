@@ -6,9 +6,9 @@ class HomePage extends StatelessWidget {
   final NavController navController = Get.put(NavController());
 
   final List<Widget> bodycontent = [
+    Text('history'),
+    Text('apps'),
     Text('home'),
-    Text('content'),
-    Text('info'),
     Text('bio'),
     Text('info'),
   ];
@@ -35,25 +35,26 @@ class HomePage extends StatelessWidget {
           unselectedItemColor: Colors.white.withOpacity(.65),
           showSelectedLabels: false,
           showUnselectedLabels: false,
+
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.history),
               label: 'history',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.image),
-              label: 'image',
+              icon: Icon(Icons.apps),
+              label: 'apps',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.swap_calls),
               label: 'home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.file_present),
-              label: 'file',
+              icon: Icon(Icons.folder),
+              label: 'folder',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.info),
+              icon: Icon(Icons.account_circle),
               label: 'info',
             ),
           ],
