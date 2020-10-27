@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
+import 'package:giveit/profile/profile.dart';
 
 class HomePage extends StatelessWidget {
   final NavController navController = Get.put(NavController());
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
     Text('apps'),
     Share(),
     Text('bio'),
-    Text('info'),
+    Profile(),
   ];
   @override
   Widget build(BuildContext context) {
