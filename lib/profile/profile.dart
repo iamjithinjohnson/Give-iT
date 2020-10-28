@@ -9,6 +9,7 @@ class Profile extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 20),
           child: CircleAvatar(
+            // ====== Image Profile ======
             child: Text(
               'G',
               style: TextStyle(
@@ -22,18 +23,27 @@ class Profile extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 8.0),
-          child:
-              //RichText(
-              //     text: TextSpan(children: [
-              //   TextSpan(text: 'Give-iT'),
-              //   WidgetSpan(child: Icon(Icons.create))
-              // ]))
-              Text(
-            'Give-iT',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-          ),
-        )
+            padding: const EdgeInsets.only(top: 8.0),
+            child: RichText(
+                text: TextSpan(children: [
+              TextSpan(
+                text: 'Give-iT',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    color: Colors.black),
+              ),
+              WidgetSpan(
+                  child: Icon(
+                Icons.create,
+                size: 20,
+              ))
+            ]))
+            //     Text(
+            //   'Give-iT',
+            //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            // ),
+            )
       ],
     );
   }
