@@ -1,6 +1,6 @@
-# giveit
+# Give-iT
 
-A new Flutter project.
+Give-It is a sharing app like xender,shareit etc. This app is under development.
 
 ## Getting Started
 
